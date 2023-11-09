@@ -25,7 +25,7 @@ const createColor = () => {
 export const Statistics = ({ title, stats }) => {
   return (
     <StatisticsSection>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       <StatList>
         {stats.map(({ id, label, percentage }) => {
           return (
